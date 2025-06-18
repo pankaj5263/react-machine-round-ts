@@ -1,0 +1,14 @@
+body {
+    background-color: $color-background;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: $color-primary;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  

@@ -1,0 +1,13 @@
+// src/scss/main.scss
+
+// Abstracts (variables, mixins, etc.)
+@import './abstracts/variables';
+
+// Base styles
+@import './base/reset';
+@import './base/typography';
+@import './base/base';
+
+// Optionally later:
+// @import './layout/grid';
+// @import './components/buttons';
