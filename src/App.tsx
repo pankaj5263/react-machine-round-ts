@@ -1,8 +1,10 @@
+import { RouterProvider } from "react-router-dom"
+import router from "./routes"
 function App() {
 
   return (
     <>
-    React Machine Round question
+    <RouterProvider router={router}></RouterProvider>
     </>
   )
 }
