@@ -1,0 +1,19 @@
+
+.accordion-page{
+    @include flex-center;
+    padding-top: 10vh;
+}
+
+.accordian{
+    width: 300px;
+    border: $accordian-border;
+    border-radius: $border-radius;
+}
+
+.accordian-item {
+
+}
+
+.accordian-title{
+    padding: 5px 15px;
+}
