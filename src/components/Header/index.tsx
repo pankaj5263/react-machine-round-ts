@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 const dropDownList = [
     {id:'home', text:"Home", },
     {id:'accordian', text:"Accordian",},
-    {id:'popover', text:"Popover",}
+    {id:'popover', text:"Popover"},
+    {id:'tabs', text:"Tabs"}
 ]
 
 const Header: React.FC = () => {
