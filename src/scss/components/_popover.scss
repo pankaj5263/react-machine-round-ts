@@ -1,0 +1,39 @@
+
+.popover-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popover-main{
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: white;
+  border-radius: $border-radius ;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); // centers it
+  overflow: auto;
+  max-height: 80vh;
+  max-width: 90vw;
+  min-width: 30vw;
+  font-size: 12px;
+}
+
+.popover-title{
+    font-size: $font-size-base;
+    font-weight: 500;
+}
+
+
+.popover-close{
+    background-color: $color-primary;
+    padding: 5px;
+    max-width: 50px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 18px;
+    cursor: pointer;
+}

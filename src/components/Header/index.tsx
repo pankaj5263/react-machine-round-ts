@@ -4,7 +4,8 @@ import {HOME, REACT_MACHINE_ROUND_INTERVIEW_QUESTIONS} from '../utils/constants'
 import { useNavigate } from "react-router-dom";
 const dropDownList = [
     {id:'home', text:"Home", },
-    {id:'accordian', text:"Accordian",}
+    {id:'accordian', text:"Accordian",},
+    {id:'popover', text:"Popover",}
 ]
 
 const Header: React.FC = () => {
