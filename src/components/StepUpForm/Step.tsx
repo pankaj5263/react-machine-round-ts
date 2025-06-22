@@ -1,33 +1,19 @@
 import React from "react";
 
 const Step = ({ index, selectedIndex }) => {
+  const isActive = index <= selectedIndex;
 
-    console.log("count===1", index);
-  const circle = (
-    <>
-      <div style={{...styleStep}}>
-        <div style={styleStepChild}>{index+1}</div>
-      </div>
-    </>
+  const circleStyle = {
+    ...styleStep,
+    backgroundColor: isActive ? "#e6ffe6" : "white",
+    borderColor: isActive ? "green" : "#ccc",
+  };
+
+  return (
+    <div style={circleStyle}>
+      <div style={styleStepChild}>{index + 1}</div>
+    </div>
   );
-
-
-  if(index <= selectedIndex && index !==0){
-    return (
-        <>
-          <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
-            <div style={{ width: "calc(100% - 50px)" }}>
-              <div style={{ border: "1px solid green" }}></div>
-            </div>
-    
-            {circle}
-          </div>
-        </>
-      );
-  }
-
-  return circle;
-
 };
 
 export default Step;
@@ -37,7 +23,7 @@ const styleStep = {
   border: "2px solid green",
   width: "50px",
   borderRadius: "50%",
-  minWidth: "50px"
+  minWidth: "50px",
 };
 
 const styleStepChild = {
