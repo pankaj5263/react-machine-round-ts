@@ -6,7 +6,8 @@ const dropDownList = [
     {id:'home', text:"Home", },
     {id:'accordian', text:"Accordian",},
     {id:'popover', text:"Popover"},
-    {id:'tabs', text:"Tabs"}
+    {id:'tabs', text:"Tabs"},
+    {id:'progressbar', text:"Progressbar"}
 ]
 
 const Header: React.FC = () => {
