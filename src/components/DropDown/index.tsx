@@ -1,7 +1,7 @@
 import React from 'react';
 import type { DropDownList } from '../../type';
 interface Props {
-    list: DropDownList[];
+    list: [];
     handleDropdown:(value:string) => void
 
 }

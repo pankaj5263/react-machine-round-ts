@@ -5,6 +5,7 @@ import AccordianPage from "../pages/AccordianPage";
 import PopoverPage from "../pages/PopoverPage";
 import TabsPage from "../pages/TabsPage";
 import ProgressBarPage from "../pages/ProgressBarPage";
+import StepUpForm from "../pages/StepUpFormPage";
 
 const router = createBrowserRouter([
   {
@@ -17,16 +18,21 @@ const router = createBrowserRouter([
         element: <AccordianPage />,
       },
       {
-        path:'/popover',
-        element: <PopoverPage/>
+        path: "/popover",
+        element: <PopoverPage />,
       },
       {
-        path:'tabs',
-        element: <TabsPage/>
-      },      {
-        path:'progressbar',
-        element: <ProgressBarPage/>
-      }
+        path: "tabs",
+        element: <TabsPage />,
+      },
+      {
+        path: "progressbar",
+        element: <ProgressBarPage />,
+      },
+      {
+        path: "stepupform",
+        element: <StepUpForm />,
+      },
     ],
   },
 ]);
